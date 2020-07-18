@@ -1,0 +1,136 @@
+@import "base.sass"
+
+body
+    background-color: $white
+    width: 85%
+    margin: auto
+    padding-top: 20px
+    transition: $base-transition
+body.dark
+    background-color: $very-dark-blue
+header
+    .titles-dashboard
+        .title
+            margin-bottom: 10px
+            margin-top: 0
+        .subtitle
+            margin-top: 0
+            width: 100%
+            border-bottom: 1px solid $dark-grayish-blue
+            padding-bottom: 25px
+
+
+.toggle-color-mode
+    display: flex
+    flex-flow: nowrap row
+    align-items: center
+    justify-content: space-between
+    margin: 10px 0
+    .toggle-button
+        cursor: pointer
+        border-radius: 500px
+        width: 60px
+        height: 28px
+        border: none
+        background-color: $toggle-to-dark
+        position: relative
+        outline: none
+        &::after
+            position: absolute
+            content: ""
+            width: 24px
+            height: 24px
+            border-radius: 100%
+            background-color: $white
+            top: 2px
+            left: 2px
+            right: unset
+            transition: $base-transition
+            
+        &.active
+            transition: $base-transition
+            background-image: $toggle-background
+            &::after
+                background-color: $very-dark-blue
+                transition: $base-transition
+                transform: translateX(30px)
+
+.summary-followers-grid
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(4, 1fr)
+    grid-column-gap: 0
+    grid-row-gap: 20px
+    .account-box
+        .account-link
+            display: flex
+            align-items: center
+            width: 100%
+            justify-content: center
+            a
+                margin-left: 10px
+        .followers-subtitle
+            letter-spacing: 7px
+            color: $dark-grayish-blue
+            text-align: center
+            margin-top: 0
+            transition: $base-transition
+            body.dark &
+                color: $desaturated-blue
+    .facebook-account
+        border-top: 5px solid $facebook-color
+    .instagram-account
+        border-top: 5px solid #8134AF
+    .twitter-account
+        border-top: 5px solid $twitter-color
+    .youtube-account
+        border-top: 5px solid $youtube-color
+    @media only screen and (min-width: 768px)
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    @media screen and (min-width: 1440px)
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+.summary-data-accounts
+    margin-bottom: 20px
+    h2
+        color: $dark-grayish-blue
+    .summary-data-grid
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        .type-data
+            margin-top: 0
+        .data-icon, .change-today
+            justify-self: right
+            width: auto
+        .number-data
+            align-self: end
+            transition: $base-transition
+            body.dark &
+                color: $white
+                transition: $base-transition
+        .change-today
+            margin-top: 20px
+        @media only screen and (min-width: 768px)
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        @media screen and (min-width: 1440px)
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            
+
+.attribution
+    font-size: 11px
+    text-align: center
+    a
+        color: hsl(228, 45%, 44%)

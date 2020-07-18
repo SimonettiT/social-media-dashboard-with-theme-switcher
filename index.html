@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social Media Dashboard</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="top-background-dark"></div>
+    <div class="titles-dashboard">
+      <h2 class="title">Social Media Dashboard</h2>
+      <p class="subtitle bold">Total Followers: 23,004</p>
+    </div>
+    <div class="toggle-color-mode">
+      <p class="bold">Dark Mode</p>
+      <button class="toggle-button" id="toggle-button"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="summary-followers-grid">
+    
+      <div class="box account-box facebook-account">
+        <div class="account-link">
+          <img class="icon account-icon" src="images/icon-facebook.svg" alt="Facebook-icon">
+          <a href="" class="account-name">@nathanf</a>
+        </div>
+        <h1 class="number-followers">1987</h1>
+        <p class="followers-subtitle">FOLLOWERS</p>
+        <div class="change-today">
+          <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+          <div class="positive-day">12 Today</div>
+        </div>
+        
+      </div>
+
+      <div class="box account-box twitter-account">
+        <div class="account-link">
+          <img class="icon account-icon" src="images/icon-twitter.svg" alt="Twitter-icon">
+          <a href="" class="account-name">@nathanf</a>
+        </div>
+        <h1 class="number-followers">1044</h1>
+        <p class="followers-subtitle">FOLLOWERS</p>
+        <div class="change-today">
+          <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+          <div class="positive-day">99 Today</div>
+        </div>
+      </div>
+
+      <div class="box account-box instagram-account">
+        <div class="account-link">
+          <img class="icon account-icon" src="images/icon-instagram.svg" alt="Instagram-icon">
+          <a href="" class="account-name">@realnathanf</a>
+        </div>
+        <h1 class="number-followers">11k</h1>
+        <p class="followers-subtitle">FOLLOWERS</p>
+        <div class="change-today">
+          <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+          <div class="positive-day">1099 Today</div>
+        </div>
+      </div>
+
+      <div class="box account-box youtube-account">
+        <div class="account-link">
+          <img class="icon account-icon" src="images/icon-youtube.svg" alt="Youtube-icon">
+          <a href="" class="account-name">Nathan F.</a>
+        </div>
+        <h1 class="number-followers">8239</h1>
+        <p class="followers-subtitle">SUBSCRIBERS</p>
+        <div class="change-today">
+          <img class="icon-up" src="images/icon-down.svg" alt="Icon-down">
+          <div class="negative-day">144 Today</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="summary-data-accounts">
+
+      <h2>Overview - Today</h2>
+      <div class="summary-data-grid">
+
+        <div class="box data-box facebook-box">
+          <p class="type-data">Page Views</p>
+          <img src="images/icon-facebook.svg" alt="Facebook-icon" class="icon data-icon">
+          <div class="number-data">87</div>
+          <div class="change-today">
+            <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+            <div class="positive-day short-number">3%</div>
+          </div>
+        </div>
+
+        <div class="box data-box twitter-box">
+          <p class="type-data">Likes</p>
+          <img src="images/icon-facebook.svg" alt="Facebook-icon" class="icon data-icon">
+          <div class="number-data">52</div>
+          <div class="change-today">
+            <img class="icon-down" src="images/icon-down.svg" alt="Icon-down">
+            <div class="negative-day short-number">2%</div>
+          </div>
+        </div>
+
+        <div class="box data-box instagram-box">
+          <p class="type-data">Likes</p>
+          <img src="images/icon-instagram.svg" alt="Instagram-icon" class="icon data-icon">
+          <div class="number-data">5462</div>
+          <div class="change-today">
+            <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+            <div class="positive-day short-number">2257%</div>
+          </div>
+        </div>
+
+        <div class="box data-box instagram-box">
+          <p class="type-data">Profile Views</p>
+          <img src="images/icon-instagram.svg" alt="Instagram-icon" class="icon data-icon">
+          <div class="number-data">52K</div>
+          <div class="change-today">
+            <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+            <div class="positive-day short-number">1375%</div>
+          </div>
+        </div>
+
+        <div class="box data-box twitter-box">
+          <p class="type-data">Retweets</p>
+          <img src="images/icon-twitter.svg" alt="Twitter-icon" class="icon data-icon">
+          <div class="number-data">117</div>
+          <div class="change-today">
+            <img class="icon-up" class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+            <div class="positive-day short-number">303%</div>
+          </div>
+        </div>
+
+        <div class="box data-box twitter-box">
+          <p class="type-data">Likes</p>
+          <img src="images/icon-twitter.svg" alt="Twitter-icon" class="icon data-icon">
+          <div class="number-data">507</div>
+          <div class="change-today">
+            <img class="icon-up" src="images/icon-up.svg" alt="Icon-up">
+            <div class="positive-day short-number">553%</div>
+          </div>
+        </div>
+
+        <div class="box data-box youtube-box">
+          <p class="type-data">Likes</p>
+          <img src="images/icon-youtube.svg" alt="Youtube-icon" class="icon data-icon">
+          <div class="number-data">107</div>
+          <div class="change-today">
+            <img class="icon-down" src="images/icon-down.svg" alt="Icon-down">
+            <div class="negative-day short-number">19%</div>
+          </div>
+        </div>
+
+        <div class="box data-box youtube-box">
+          <p class="type-data">Total Views</p>
+          <img src="images/icon-youtube.svg" alt="Youtube-icon" class="icon data-icon">
+          <div class="number-data">1407</div>
+          <div class="change-today">
+            <img class="icon-down" src="images/icon-down.svg" alt="Icon-down">
+            <div class="negative-day short-number">12%</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Tomás Simonetti</a>.
+    </div>
+    -->
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
