@@ -95,6 +95,10 @@ body.dark .box {
   background-color: #252a41;
 }
 
+body.dark .box:hover {
+  background-color: #2c334e;
+}
+
 .change-today {
   display: -webkit-box;
   display: -ms-flexbox;
