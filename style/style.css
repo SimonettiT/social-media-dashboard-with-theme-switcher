@@ -306,7 +306,21 @@ body.dark .summary-followers-grid .account-box .followers-subtitle {
 }
 
 .summary-followers-grid .instagram-account {
-  border-top: 5px solid #8134AF;
+  position: relative;
+}
+
+.summary-followers-grid .instagram-account::after {
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  background-size: 100%;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
 }
 
 .summary-followers-grid .twitter-account {

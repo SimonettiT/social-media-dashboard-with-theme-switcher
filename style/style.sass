@@ -94,7 +94,18 @@ header
     .facebook-account
         border-top: 5px solid $facebook-color
     .instagram-account
-        border-top: 5px solid #8134AF
+        position: relative
+    .instagram-account::after
+        background-repeat: no-repeat
+        background-image: $instagram-color
+        background-size: 100%
+        height: 5px
+        width: 100%
+        border-radius: 10px 10px 0 0
+        position: absolute
+        content: ' '
+        top: 0
+        left: 0
     .twitter-account
         border-top: 5px solid $twitter-color
     .youtube-account
